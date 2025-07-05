@@ -16,21 +16,21 @@ variable "ami_v" {
 variable "instance_type" {
     default= "t3.micro"
 }
-resource "aws_instance" "web_instance"{
+resource "aws_instance" "web_instance1"{
     ami = var.ami_v
     instance_type = var.instance_type
     tags={
         Name = var.sName["frontend"]
     }
 }
-resource "aws_instance" "web_instance"{
+resource "aws_instance" "web_instance2"{
     ami = var.ami_v
     instance_type = var.instance_type
     tags={
       Name = var.sName["frontend"]
     }
 }
-resource "aws_instance" "web_instance"{
+resource "aws_instance" "web_instance3"{
    ami = var.ami_v
     instance_type =var.instance_type
     tags={
