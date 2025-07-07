@@ -1,14 +1,19 @@
 variable "sName"{
-    default ={
-        frontend = "frontend",
-        mongodb = "mongodb",
-        catalogue="catalogue"
-
+    default= {
+        frontend ={
+            name = "frontend"
+            instance_type = "t3.micro"
+        }
+        mongodb = {
+            name = "mongodb"
+            instance_type = "t3.micro"
+        }
+        catalogue = {
+            name = "catalogue"
+            instance_type = "t3.micro"
+        }
     }
+
+    
 }
-variable "ami_v" {
-    default= "ami-09c813fb71547fc4f"
-}
-variable "instance_type" {
-    default= "t3.micro"
-}
+
