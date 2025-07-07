@@ -1,4 +1,4 @@
-{
+variables {
     sName= {
     frontend : "frontend",
     mongodb : "mongodb",
