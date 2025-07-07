@@ -3,7 +3,7 @@ provider "aws" {
 
 }
 variable "instance_type" {}
-variable "sNmae" {}
+variable "sName" {}
 resource "aws_instance" "web_instance1"{
     for_each = var.sName
     ami = "ami-09c813fb71547fc4f"
