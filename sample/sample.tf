@@ -2,6 +2,7 @@ provider "aws" {
     region = "us-east-1"
 
 }
+variables {}
 resource "aws_instance" "web_instance1"{
     for_each = var.sName
     ami = "ami-09c813fb71547fc4f"
@@ -10,3 +11,4 @@ resource "aws_instance" "web_instance1"{
         Name = each.key
     }
 }
+ 
