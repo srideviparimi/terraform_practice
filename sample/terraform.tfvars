@@ -1,4 +1,4 @@
-{
+
     "sName":  {
         frontend : "frontend",
         mongodb : "mongodb",
@@ -6,5 +6,3 @@
         }
 
     "instance_type" : "t3.micro"
-
-}
