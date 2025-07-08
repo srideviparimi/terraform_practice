@@ -5,8 +5,6 @@ module "ec2" {
     instance_type   = each.value["instance_type"]
     ami             = var.ami
     env             = var.env
-    tags            = {
-        Name            = each.key
-    }
-    
+    zone_name       = var.zone_name
+    zone_id         =var.zone_id
 }
