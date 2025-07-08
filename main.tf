@@ -1,5 +1,5 @@
 
-module "ec2"{
+module "ec2" {
     for_each        = var.instances
     source          = "./modules/ec2/"
     instance_type   = each.value["instance_type"]
