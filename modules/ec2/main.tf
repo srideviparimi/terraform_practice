@@ -1,6 +1,4 @@
-variable "instances" {}
-variable "ami" {}
-variable "env" {}
+
 
 resource "aws_instance" "web_instance"{
     for_each        = var.instances
