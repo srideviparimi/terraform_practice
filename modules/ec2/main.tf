@@ -1,6 +1,7 @@
 
 
 resource "aws_instance" "web_instance"{
+    for_each          =var.instances
     instance_type    = var.instance_type
     ami              = var.ami
     
