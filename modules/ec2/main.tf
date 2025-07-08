@@ -1,4 +1,4 @@
-provider "aws" {}
+
 variable "instances" {}
 variable "ami" {}
 variable "env" {}
