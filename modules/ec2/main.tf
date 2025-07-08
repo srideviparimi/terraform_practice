@@ -1,9 +1,9 @@
 
 
 resource "aws_instance" "web_instance"{
-    for_each        = var.instances
-    ami             = var.ami
-    instance_type   = each.value["instance_type"]
+    instance_type     = var.instance_type
+    ami              = var.ami
+    
     tags            = {
         Name        =   "${each.key}-${var.env}"
     }

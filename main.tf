@@ -5,5 +5,5 @@ module "ec2" {
     instance_type   = each.value["instance_type"]
     ami             = var.ami
     env             = var.env
-    Name            = each.key
+    name            = each.key
 }
